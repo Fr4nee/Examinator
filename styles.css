@@ -1,7 +1,54 @@
 body {
     font-family: 'Nunito', sans-serif;
+    display: flex;
+    justify-content: center;
 }
-div  {
-    font-family: 'Ubuntu', sans-serif;
 
+/* INICIO HEADER */
+header {
+    display: flex;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: rgb(73, 86, 145);
+    width: 80%;
+    border: solid rgb(73, 86, 145) 10px;
 }
+.headercontent {
+    display: flex;
+    flex-flow: column;
+}
+#iconmenudes {
+    width: 50px;
+    transition: 500ms;
+}
+#iconmenudes:hover > .menudes {
+    width: 300px;
+    background-color: blue;
+}
+.menudes {
+    width: 100px;
+    display: none;
+}
+.menudes ul{
+    list-style-type: none;
+    display: flex;
+    flex-flow: column;
+}
+
+#title {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: larger;
+}
+#headertext {
+    font-family: 'Nunito', sans-serif;
+}
+.headerimg {
+    background-image: url(img/1.jpg);
+    object-fit: cover;
+    width: 600px;
+    height: 400px;
+    display: flex;
+    border: solid 2px;
+}
+
+
+/* FIN HEADER */
