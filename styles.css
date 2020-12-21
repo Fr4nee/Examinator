@@ -10,37 +10,63 @@ header {
     font-family: 'Ubuntu', sans-serif;
     background-color: rgb(73, 86, 145);
     width: 80%;
-    border: solid rgb(73, 86, 145) 10px;
 }
 .headercontent {
     display: flex;
     flex-flow: column;
 }
-#iconmenudes {
-    width: 50px;
+
+
+#btn-menudes {
+    width: 40px;
+    padding: 2%;
+}
+    #btn-menudes:hover + .menudes {
+        display: block;
+        padding: 2%;
+    }
+
+.menudes {
+    display: none;
+    transition: 500ms;
+    transition-delay: 200ms;
+    margin: 0;
+    padding: 0;
+}
+    .menudes:hover {
+        display: block;
+    }
+
+#list{
+    list-style-type: none;
+    margin: 0%;
+    padding: 2%;
+    text-align: center;
+}
+#list li {
+    text-decoration: none;
+    margin: 1%;
+    padding: 1.5%;
+    border: solid 1px;
     transition: 500ms;
 }
-#iconmenudes:hover > .menudes  {
-    width: 300px;
-    background-color: blue;
-    display: block;
+#list li:hover {
+    border: solid 3px;
+    margin: 2%;
+    padding: 3%;
 }
-.menudes {
-    width: 100px;
-    display: none;
-}
-.menudes ul{
-    list-style-type: none;
-    display: flex;
-    flex-flow: column;
-}
+
+
 
 #title {
     font-family: 'Ubuntu', sans-serif;
-    font-size: larger;
+    font-size: 30px;
+    text-align: center;
 }
 #headertext {
     font-family: 'Nunito', sans-serif;
+    padding-left: 2%;
+    padding-right: 2%;
 }
 .headerimg {
     background-image: url(img/1.jpg);
@@ -48,7 +74,8 @@ header {
     width: 600px;
     height: 400px;
     display: flex;
-    border: solid 2px;
+    border: solid rgb(73, 86, 145) 10px;
+    border-left: 2px;
 }
 
 
