@@ -20,9 +20,10 @@ header {
     width: 50px;
     transition: 500ms;
 }
-#iconmenudes:hover > .menudes {
+#iconmenudes:hover > .menudes  {
     width: 300px;
     background-color: blue;
+    display: block;
 }
 .menudes {
     width: 100px;
