@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
 }   
- 
+
 body {
     font-family: 'Nunito', sans-serif;
     /*display: flex;*/
@@ -16,11 +16,10 @@ header {
     display: flex;
     font-family: 'Ubuntu', sans-serif;
     background-color: rgb(194, 115, 132);
-    height: 90%;
+    height: 100%;
     justify-content: center;
     margin: 0;
 }
-
 .fas{
     padding: 2%;
 }
@@ -123,16 +122,17 @@ header {
     height: 540px;
     border: solid  rgb(194, 115, 132) 10px;
     border-left: 2px;
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
 /* FIN HEADER */
 /* INICIO MAIN */ 
 #main {
     height: 100%;
-    width: 90%;
+    width: 100%;
     display: flex;
     flex-flow: column;
-    border: 2px solid;
-    margin: 2em;
+
 }
 /* Inicio seccion 1 */
     #seccion1{
@@ -140,30 +140,21 @@ header {
         position: relative;
         display: flex;
         justify-content: flex-end;
-        height: 546px;
-        margin-bottom: 2%;
+        height: 580px;
+        margin-bottom: 3%;
+        background-image: url(img/8.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
     }
         #gentext{
             display: flex;
             justify-content: flex-end;
             flex-direction: column; 
+            color: black;
         }
-            h1 {
-                font-family: 'Ubuntu', sans-serif;
-                margin: 1em;
-            }
-            h3 {
-                font-family: 'Nunito', sans-serif;
-                margin: 3em;
-                margin-top: 1em;
-            }
-        #foto1 {
-            object-fit: cover;
-            width: 100%;
-            position: absolute;
-            z-index: -1;
-            opacity: 80%;
-        }
+            
 /* Fin seccion1 */
 /* Inicio seccion2*/ 
     #seccion2 {
@@ -173,7 +164,7 @@ header {
         flex-flow: row-reverse;
         justify-content: center;
         height: 546px;
-        margin-bottom: 15%;
+        margin-bottom: 10%;
         }
         #compass{ 
             text-align: center;
@@ -185,24 +176,47 @@ header {
     position: relative;
     display: flex;
     justify-content: flex-end;
-    height: 546px;
+    height: 580px;
+    background-image: url(img/4.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
     #gentext{
         display: flex;
         justify-content: flex-end;
         flex-direction: column; 
     }
-        h1 {
-            font-family: 'Ubuntu', sans-serif;
-        }
-        h3 {
-            font-family: 'Nunito', sans-serif;
-        }
-    #foto2 {
-        object-fit: cover;
-        width: 100%;
-        position: absolute;
-        z-index: -1;
-        opacity: 80%;
+.titlugar {
+    font-family: 'Ubuntu', sans-serif;
+    margin: 1em;
+    color: white;
+    text-shadow: black ;
+    border: 10px;
+    text-shadow: 10px 10px 10px #000000;
     }
-        
+
+.texlugar {
+    font-family: 'Nunito', sans-serif;
+    margin: 3em;
+    margin-top: 1em;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.241) ;
+    }
+
+.tit_DG_lugar {
+    font-family: 'Ubuntu', sans-serif;
+    margin: 1em;
+    color: rgb(0, 0, 0);
+    text-shadow: black ;
+
+
+}
+
+.tex_DG_lugar {
+    font-family: 'Nunito', sans-serif;
+    margin: 3em;
+    margin-top: 1em;
+    color: rgb(0, 0, 0);
+}
